@@ -5,8 +5,8 @@ const Task = ({ task }) => {
   const { completeTask, deleteTask } = useContext(GlobalContext);
   const [divClass, setdivClass] = useState(task.isCompleted);
 
-  const changeClass = async () => {
-    await setdivClass(!divClass);
+  const changeClass = () => {
+    setdivClass((prevValue) => !prevValue);
     completeTask(task._id);
   };
   return (
