@@ -150,3 +150,31 @@ select {
   background: #1565c0;
   color: white;
 }
+
+@media only screen and (max-width: 1024px) {
+  .todo-list {
+    width: 60%;
+    list-style: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  form {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  form input {
+    width: 70%;
+  }
+
+  .header {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .todo {
+    margin: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  }
+}
