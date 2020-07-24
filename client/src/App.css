@@ -172,9 +172,18 @@ select {
     font-size: 1rem;
     text-align: center;
   }
+  .todo-list {
+    width: 90%;
+  }
   .todo {
+    width: 90%;
     margin: 0.5rem;
     font-size: 1rem;
     transition: all 0.5s ease;
+  }
+  .complete-btn,
+  .trash-btn {
+    padding: 0.5rem;
+    font-size: 0.5rem;
   }
 }
